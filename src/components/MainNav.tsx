@@ -12,7 +12,7 @@ const links = [
 export default function MainnNav() {
   const pathName = usePathname();
   return (
-    <ul className="list-none grid gap-4 grid-cols-[repeat(4,max-content)]">
+    <ul className="list-none grid gap-4 grid-cols-[repeat(4,max-content)] py-4">
       {links.map((link) => (
         <li key={link.name} className={clsx('inline', pathName === link.path ? 'font-bold' : '')}>
           <Link href={link.path}>{link.name}</Link>
