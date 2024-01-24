@@ -1,0 +1,19 @@
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1400;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill: darkslategray;
+  }
+}
+
+.myNameIs {
+  width: 80vw;
+
+  .path {
+    stroke-dasharray: 1400;
+    stroke-dashoffset: 1400;
+    animation: dash 2s linear forwards;
+  }
+}
